@@ -1,1 +1,1 @@
-# Typescript-jwt-typeorm-exercise
+TypeScript Express.js and TypeORM to create an enterprise level Rest API with JWT authentication and role based authorization. The objective is to create a repository that you can use as bases for your real life projects.# Typescript-jwt-typeorm-exercise
