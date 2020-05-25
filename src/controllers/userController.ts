@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-const config = require("../Utils/config");
+const config = require("../utils/config");
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { getRepository } from "typeorm";
