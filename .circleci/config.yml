@@ -1,4 +1,9 @@
-version: 2
+version: 2.1
+
+orbs:
+  coveralls: coveralls/coveralls@1.0.5
+  node: circleci/node@1.1.6
+
 jobs:
   build:
     docker:
@@ -17,6 +22,7 @@ jobs:
       - run:
             name: run-tests 
             command: npm test 
+      - run: make test-coverage
       - run:
             name: run-build
             command: npm run build
