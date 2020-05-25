@@ -17,8 +17,6 @@ jobs:
       - run:
             name: run-tests & coverage
             command: npm test && npm coverage
-      - coveralls/upload
-       
       - run:
             name: run-build
             command: npm run build
