@@ -1,4 +1,4 @@
-const config = require("../Utils/config");
+const config = require("../utils/config");
 import RequestWithUser from "../interfaces/RequestWithUser";
 import { NextFunction, Response } from "express";
 import jwt from "jsonwebtoken";
