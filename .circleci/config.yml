@@ -22,7 +22,13 @@ jobs:
       - run:
             name: run-tests 
             command: npm test 
-      - run: make test-coverage
+      - run:
+          name: Install and Make
+          command: npm install && make test-coverage
+      - coveralls/upload:
+          parallel: true
+          flag_name: Test 1
+          verbose: true
       - run:
             name: run-build
             command: npm run build
